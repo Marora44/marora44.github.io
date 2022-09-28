@@ -1,14 +1,47 @@
-header, hgroup, nav, footer, figure, figcaption, aside, section, article {
-	display: block;
-}
 body {
-	background-color: ;
-	color: #666666;
 	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("ptrbackground.jpg");
+}
+#wrapper{
+	background-color: #FFFFFF;
+	width: 80%;
+	margin: auto;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+header{
+	background: url("sunset.jpg") no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	float: top;
+}
+
+nav{
+	position: absolute;
+	width: 15%;
+	background-color: #3399CC;
+	margin-bottom: 0px;
+	float: left;
+	height: 100%;
+}
+
+#content, footer{
+	box-sizing:border-box;
+	float: right;
+	padding: 10px;
+	width: 85%;
+}
+
+#content ul {
+	list-style-image: url("marker.gif");
 }
 
 nav ul {
+	list-style-type: none;
 	font-size: 1.2em;
+	margin: 0px
 }
 nav a:visited {
 	color: #344873;
@@ -16,15 +49,17 @@ nav a:visited {
 nav a:hover {
 	color: #FFFFFF;
 }
-h1 {
-	margin-bottom: 0;
+h1{
 	padding: 10px;
+	color: #FFFFFF;
+	margin: 0px;
 }
 h2 {
 	color: #3399CC;
+
 }
-h1,
-h2 {
+h1, h2 {
+	
 	font-family: Georgia, "Times New Roman", serif;
 }
 #contact {
