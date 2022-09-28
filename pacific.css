@@ -9,6 +9,7 @@ body {
 	display: block;
 	overflow: hidden;
 	position: relative;
+	min-width: 600px;
 }
 
 header{
@@ -27,6 +28,11 @@ nav{
 	height: 100%;
 }
 
+.resort {
+	color:#3399CC;
+	font-weight: bold;
+}
+
 #content, footer{
 	box-sizing:border-box;
 	float: right;
@@ -36,12 +42,24 @@ nav{
 
 #content ul {
 	list-style-image: url("marker.gif");
+	list-style-position: inside;
+}
+
+#content img {
+	float: left;
+	margin-right: 20px;
 }
 
 nav ul {
 	list-style-type: none;
 	font-size: 1.2em;
-	margin: 0px
+	margin: 0px;
+	padding: 20px;
+}
+
+nav a{
+	text-decoration: none;
+	padding: 10px;
 }
 nav a:visited {
 	color: #344873;
