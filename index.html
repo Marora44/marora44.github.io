@@ -1,52 +1,56 @@
-<!--
-File: index.html
-GUI Assignment: Creating Your First Web Page
-Author: Mundeep Arora, UMass Lowell Computer Science, mundeep_arora@student.uml.edu
-Description: Simple web page to demonstrate knowledge of HTML
-!-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>My First Web Page</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="jquery-3.6.1.min.js"></script>
-  <script src="script.js"></script>
+    <title>Pacific Trails Resort</title>
+    <meta charset="utf-8">
+    <link href="pacific.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   <![endif]-->
 </head>
-
 <body>
-  <table id="firstTable" class="tableRed">
-    <tr>
-      <th colspan="2">Some helpful sties</th>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <th>Link</th>
-    </tr>
-    <tr>
-      <td>Stack Overflow</td>
-      <td><a href="https://stackoverflow.com/">https://stackoverflow.com/</a></td>
-    </tr>
-    <tr>
-      <td>Github</td>
-      <td><a href="https://github.com/">https://github.com/</a></td>
-    </tr>
-  </table>
-  <br>
-  <div>
-    <button id="tableButton" class="btnRed">click me to change the table borders to green</button>
-    <br>
-    <br>
-    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="html5 logo">
-    <p>
-      <a href="https://jigsaw.w3.org/css-validator/check/referer">
-          <img style="border:0;width:88px;height:31px"
-              src="https://jigsaw.w3.org/css-validator/images/vcss"
-              alt="Valid CSS!" />
-      </a>
-  </p>
-  </div>
+    <div id="wrapper">
+        <header>
+            <h1>Pacific Trails Resort</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="yurts.html">Yurts</a>
+                </li>
+                <li><a href="activities.html">Activities</a>
+                </li>
+                <li><a href="reservations.html">Reservations</a>
+            </ul>
+        </nav>
+        <div id="content">
+            <h2>Enjoy Nature in Luxury</h2>
+            <img src="coast.jpg" alt="Pacific Coast">
+            <p><span class="resort">Pacific Trails Resort</span> offers a special lodging experience on the California North Coast. Relax in serenity with panoramic views of the Pacific Ocean.</p>
+            <ul>
+                <li>Private yurts with decks overlooking the ocean</li>
+                <li>Activities lodge with fireplace and gift shop</li>
+                <li>Nightly fine dining at the Overlook Cafe</li>
+                <li>Heated outdoor pool and whirlpool</li>
+                <li>Guided hiking tours of the redwoods</li>
+            </ul>
+            <div id="contact">
+                <span class="resort">Pacific Trails Resort</span>
+                <br> 12010 Pacific Trails Road
+                <br> Zephyr, CA 95555
+                <br>
+                <br> 888-555-5555
+                <br>
+                <br>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; 2014 Pacific Trails Resort
+            <br>
+            <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+        </footer>
+    </div>
 </body>
 
 </html>
