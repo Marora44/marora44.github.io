@@ -3,6 +3,7 @@ $(function () {
     inputForm.on("submit", (event) => {
         event.preventDefault();
         $("#multTable").text("").append("<thead><tr><th></th></tr></thead>");
+        $("#table").hide();
         let rBegin = parseInt($("#rBegin").val());
         let rEnd = parseInt($("#rEnd").val());
         let cBegin = parseInt($("#cBegin").val());
