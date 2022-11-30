@@ -29,6 +29,14 @@ $(() => {
             required:true,
             range: (element) => {return [($("#rBegin").valid() ? $("#rBegin").val() : -100),100]}
             }
+        },
+        cBegin: {
+            required: true,
+            range: [-100, 100]
+        },
+        cEnd: {
+            required: true,
+            range: (element) => { return [($("#cBegin").valid() ? $("#cBegin").val() : -100), 100] }
         }
     
    })
