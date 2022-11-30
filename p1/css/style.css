@@ -1,6 +1,8 @@
 #inputForm input[type="number"]{
     width: 4em;
     min-width: 3em;
+    margin-right: 5px;
+    margin-bottom: 2px;
 }
 
 #inputForm label{
@@ -10,16 +12,11 @@
 }
 
 div#form{
-    width: 250px;
-    min-width: 100px;
-    margin-bottom: 20px;
+    display: inline-block;
 }
 
-p.inputErr{
+.error{
     font-size: smaller;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    visibility: hidden;
     color: red;
 }
 

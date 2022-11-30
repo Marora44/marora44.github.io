@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Multiplication Table</title>
+        <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
     </head>
     <body>
-        <div id="form">
+        <div id="form" onsubmit="return false">
             <form id="inputForm">
                 <fieldset id="inputFields">
                     <legend>Multiplication Table</legend>
                         <label for="rBegin">Min. Row Value:</label>
-                        <input type="number" max="100" min="-100" value="0" name="rBegin" width="1" id="rBegin"><br>
+                        <input type="number" value="0" name="rBegin" width="1" id="rBegin"><br>
                         <label for="rEnd">Max. Row Value:</label>
-                        <input type="number" max="100" min="-100" value="0" name="rEnd" id="rEnd"><br>
-                        <p class="inputErr" id="rErr">Min must be less than Max</p>
+                        <input type="number" value="0" name="rEnd" id="rEnd"><br>
+                        <!-- <p class="inputErr" id="rErr">Min must be less than Max</p> -->
                         <label for="cBegin">Min. Column Value:</label>
-                        <input type="number" max="100" min="-100" value="0" name="cBegin" id="cBegin"><br>
+                        <input type="number" value="0" name="cBegin" id="cBegin"><br>
                         <label for="cEnd">Max. Column Value:</label>
-                        <input type="number" max="100" min="-100" value="0" name="cEnd" id="cEnd"><br>
-                        <p class="inputErr" id="cErr">Min must be less than Max</p>
+                        <input type="number" value="0" name="cEnd" id="cEnd"><br>
+                        <!-- <p class="inputErr" id="cErr">Min must be less than Max</p> -->
                         <input type="submit" value="Generate">
                 </fieldset>
             </form>
