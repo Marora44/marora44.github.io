@@ -1,0 +1,24 @@
+The following features are currently implemented and fully working:
+
+-Randomly select tiles from a "bag" to add to player's rack
+-Tiles can be dragged and dropped onto the scrabble squares
+-Program can tell which tile was placed on which square
+-Board has 2 bonus squares
+-Score is tallied correctly, including bonus squares
+-the player can play as many words as they want as long as there are tiles left
+-the board is cleared after each round
+-only the neccesary amount of tile are added to the player's rack after each turn
+-score is tallied until the game is reset
+-tiles can only be dragged to the scrabble board and the tile rack
+-after the first tile the tiles can only be dragged to scrabble tiles that have another tile next to them
+-tiles can be dragged back and forth between the tile rack and the board
+-player can restart the game at any point
+-blanks can be changed any time by double ckicking on them
+-blank tiles with a letter selected are outlined in red
+-the game forces the player to select a letter when a blank tile is placed on the scrabble board
+-recall button returns all tiles to the rack
+
+The following features I have the code for in the back end but have not implemented in the front end:
+
+-User can exchange letters as they wish
+-Word must be in the dictionary to be played
