@@ -1,5 +1,5 @@
 $(() => {
-    let g = new Game($("#lengthCheck").hide(), null, $("#spaceCheck").hide(),$("#submit"), $("#gameArea"));
+    let g = new Game($("#lengthCheck").hide(), null, $("#spaceCheck").hide(),$("#submit"), $("#gameArea").html(""));
     g.start();
     $("#recallButton").on("click", () => {
         g.currentTurn.recall();
@@ -9,7 +9,7 @@ $(() => {
         $("#score").text(g.totalScore);
     })
     $("#newGame").on("click", ()=>{
-        g = new Game($("#lengthCheck").hide(), null, $("#spaceCheck").hide(),$("#submit"), $("#gameArea"));
+        g = new Game($("#lengthCheck").hide(), null, $("#spaceCheck").hide(),$("#submit"), $("#gameArea").html(""));
         g.start();
     })
 
