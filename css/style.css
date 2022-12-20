@@ -1,0 +1,88 @@
+.gamesquare {
+    position: relative;
+    padding: 0;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    background-color: #E3CFAA;
+}
+
+.err{
+    color: red;
+}
+
+.gamesquare span{
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blankMenuSelected img{
+    box-sizing: border-box;
+    border: 3px solid green;
+}
+
+table.gameboard{
+    background-color: #EBD7BE;
+}
+
+.tile {
+    padding: 2px;
+}
+
+.doubleword{
+    background-color: #E89BA3;
+}
+
+table.tileTable td:first-child{
+    text-align: right;
+}
+
+table.tileTable td:last-child{
+    text-align: left;
+}
+
+img.blankSelected{
+    border: 2px solid red;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    text-align: center;
+}
+
+#tilerack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    width: 640px;
+    height: 182px;
+    background-image: url("../res/img/scrabble-tile-holder-406774_640.png");
+}
+
+#gameArea {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
