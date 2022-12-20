@@ -1,3 +1,8 @@
+/* 
+Author: Mundeep Arora
+Email: mundeep_arora@student.uml.edu 
+*/
+
 class Tile {
     constructor(letter, score) {
         this.jq = $("<img>").attr("src", `res/img/Scrabble_Tiles/Scrabble_Tile_${letter}.jpg`);

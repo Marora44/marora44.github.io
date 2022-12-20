@@ -1,3 +1,8 @@
+/* 
+Author: Mundeep Arora
+Email: mundeep_arora@student.uml.edu 
+*/
+
 $(() => {
     let g = new Game($("#lengthCheck").hide(), null, $("#spaceCheck").hide(),$("#submit"), $("#gameArea").html(""));
     g.start();
