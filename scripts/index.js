@@ -10,6 +10,7 @@ $(() => {
     })
     $("#newGame").on("click", ()=>{
         g = new Game($("#lengthCheck").hide(), null, $("#spaceCheck").hide(),$("#submit"), $("#gameArea").html(""));
+        $("#score").text(g.totalScore);
         g.start();
     })
 
